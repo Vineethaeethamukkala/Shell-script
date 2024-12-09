@@ -3,7 +3,7 @@ scriptname=$0
 date=$(date "+%F %H:%M:%S")
 logfile=/tmp/$scriptname-$date.log
 userid=$(id -u)
-validate(){
+validate() {
     if [ $userid -ne 0 ]
     then
         echo -e "\e[31m please switch to root user"
