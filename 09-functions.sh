@@ -24,7 +24,7 @@ yum install mysql -y
 
 validate $? "mysql installation"
 
-amazon-linux-extras nginx1 -y
+amazon-linux-extras install nginx1 -y
 
 yum install nginx -y
 
