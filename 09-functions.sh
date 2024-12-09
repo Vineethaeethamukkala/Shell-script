@@ -7,7 +7,7 @@ validate(){
         echo -e "\e[31m $2 is failure \e[0m"
         exit 1
     else
-        echo -e "\e[32m $2 is success \e[0m""
+        echo -e "\e[32m $2 is success \e[0m"
     fi
 
 }
