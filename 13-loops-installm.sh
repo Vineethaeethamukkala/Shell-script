@@ -28,6 +28,5 @@ fi
 for i in $@
 do
     yum install $i -y &>>$logfile
-    exit 1
 done
 validate $? "$i installation"
