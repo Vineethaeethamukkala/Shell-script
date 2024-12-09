@@ -7,7 +7,7 @@ N=\e[0m
 validate(){
     if [ $? -ne 0 ]
     then
-        echo -e "$R $2 is failure $N"
+        echo "$R $2 is failure $N"
         exit 1
     else
         echo -e "$G $2 is success $N"
