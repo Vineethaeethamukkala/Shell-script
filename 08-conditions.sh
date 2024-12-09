@@ -9,7 +9,7 @@ else
     echo "your are in root user"
 fi
 
-yum install mysqql -y
+yum install mysql -y
 
 if [ $? -ne 0 ]
 then
@@ -18,3 +18,14 @@ then
 else
     echo "installation of mysql is sucess"
 fi
+
+yum install mysql -y
+
+if [ $? -ne 0 ]
+then
+    echo "installation nginx is failure"
+    exit 1
+else
+    echo "installation of nginx is sucess"
+fi
+
