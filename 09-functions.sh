@@ -4,10 +4,10 @@ userid=$(id -u)  #here it will check if it is root / normal user
 validate(){
     if [ $? -ne 0 ]
     then
-        echo "$2 is failure"
+        echo -e "\e[31m $2 is failure \e[0m"
         exit 1
     else
-        echo "$2 is sucess"
+        echo -e "\e[32m $2 is success \e[0m""
     fi
 
 }
