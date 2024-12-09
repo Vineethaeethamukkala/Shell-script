@@ -1,3 +1,3 @@
 #!/bin/bash
-DATE=$(date)
-echo "i have executed this script: $DATE"
+DATE=$(date +%F)
+echo "i have executed this script: $DATE"   
