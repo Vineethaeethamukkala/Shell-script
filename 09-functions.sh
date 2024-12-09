@@ -1,13 +1,16 @@
 #!/bin/bash
 userid=$(id -u)  #here it will check if it is root / normal user
+R=\e[31m
+G=\e[32m
+N=\e[0m
 
 validate(){
     if [ $? -ne 0 ]
     then
-        echo -e "\e[31m $2 is failure \e[0m"
+        echo -e "$R $2 is failure $N"
         exit 1
     else
-        echo -e "\e[32m $2 is success \e[0m"
+        echo -e "$G $2 is success $N"
     fi
 
 }
