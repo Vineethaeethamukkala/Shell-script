@@ -20,5 +20,5 @@ else
     echo -e "\e[32m you are in root user \e[0m"
 fi
 
-yum install mysql -y &>>$logfile
+yum install myysql -y &>>$logfile
 validate $? "mysql installion"
