@@ -1,5 +1,5 @@
 #!/bin/bash
-NUMBER1=$1
-NUMBER2=$2
-SUM=$((NUMBER1+NUMBER2))
-echo "addition of two numbers: $SUM"
+number1=$1
+number2=$2
+sum=$((number1+number2))
+echo "addition of two numbers: $sum"
