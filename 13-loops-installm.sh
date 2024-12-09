@@ -10,9 +10,10 @@ validate() {
     
     if [ $? -ne 0 ]
     then
-        echo "$2 $R .. filure $N"
+        echo -e "$2 $R .. filure $N"
     else
-        echo "$2 $G .. Success $N"
+        echo -e "$2 $G .. Success $N"
+    fi
 }
 
 userid=$(id -u)
@@ -22,6 +23,7 @@ then
     exit 1
 else
     echo "you are in root user"
+fi
 
 for i in $@
 do
