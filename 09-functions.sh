@@ -1,8 +1,8 @@
 #!/bin/bash
 userid=$(id -u)  #here it will check if it is root / normal user
-R=\e[31m
-G=\e[32m
-N=\e[0m
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 validate(){
     if [ $? -ne 0 ]
