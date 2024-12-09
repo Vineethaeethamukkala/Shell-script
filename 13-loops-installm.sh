@@ -1,6 +1,6 @@
 #!/bin/bash
 scriptname=$0
-date=4(date "+%F %h:%M:%S")
+date=$(date "+%F %h:%M:%S")
 logfile=/tmp/$scriptname.$date
 for i in $@
 do
